@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Pagina de contenido</title>
+</head>
+
+  <body>
+    <script src="js\bootstrap.bundle.min.js"></script>
+    
+    <div class="container">
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <div class="mt-4 p-5 bg-primary text-white rounded">
+               <h1>Crea tu página de contenido</h1>
+            </div>
+          </div>
+          
+        <div class="row">
+        <div class="col-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" onclick="nuevoTitulo()" >Título</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="nuevoParrafo()">Párrafo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="nuevoEnlace()">Enlace</a>
+                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="imprimir()">Imprimir</a>
+                </li>
+              </ul>
+              
+        </div>
+         <div class="col-8">
+            <!-- un div  de tipo fila (row) con un textarea -->
+<div class="row">
+    <textarea name="" id="texto" rows="8"></textarea>
+    </div>
+    <!-- un div  de tipo fila (row) con un input de tipo file -->
+    <div class="row">
+    <input type="file" id="imagen">
+    </div>
+    <!-- un div con una clase card y un id contenido -->
+    <div class="card" id="contenido">                    
+    </div>
+    
+        </div>
+        </div>
+        
+  </body>
+  <script src="js/contenido.js"></script>
+
+</html>
